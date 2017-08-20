@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<style>
+    
+  .brown {background-color: #A52A2A;}
+  .violet {background-color: #8A2BE2;}
+  fieldset {background: lightyellow; border:10px solid yellow; margin-bottom: 10px; width: 720px;}
+  label {width: 180px; display: inline-block; text-align: right; }
+  .autow {width: auto;; display: inline-block; text-align: right;}
+  .center.{text-align: center;}
+  #salary: {background-color: red}
+  label:hover {font-size: 35px}s
+  input:hover {font-size: 35px}
+  #age {width: 35px}
+  textarea {height: 50px; width: 360px}
+	#short{
+		background-color: brown;color: white;border: 6px solid brown;
+	}
+	#poor{
+		background-color: brown;color: white;border: 6px solid brown;
+	}
+	#tall{
+		background-color: purple;color: white;border: 6px solid purple;
+	}
+	#rich{background-color: purple;color: white;border: 6px solid purple;
+	}
+	span{			
+		display: inline-block;
+		width: 50px;
+		text-align: center;
+		vertical-align: top;
+	}
+</style>
+  <h1> Please Enter Your Detail for Our Dating Website! </h1>
+</head>
+<body>
+  <form action="https://ihome.ust.hk/~rossiter/cgi­bin/show_everything.php"method="get">
+    <fieldset>
+            <legend>Your Face</legend>
+            <label for="avatar">Your Image:</label>
+            <input type="file" id="avatar" name="avatar" required>
+            <br>
+            <label for="preview">Image preview: </label>
+            <img id="preview" name="preview">
+
+    </fieldset>
+    <fieldset>
+      <legend>
+        Your General Details
+      </legend>
+      <label for="name">Name:</label>
+      <input id="name" type="text" name="name" placeholder="Your full name" required /> <br />
+      <label   for="gender">Gender:</label>
+      <input  id="gender" type="radio" name="gender" value="male"  required/> Male
+      <input id="gender" type="radio" name="gender" value="female" required/> Femal <br />
+      <label for="age">Age:</label>
+      <input id="age" type="number" name="age"   required /> <br />
+      <label for="DOB">Date Of Birth:</label>
+      <input id="DOB" type="date" name="DOB"  />      <br />
+
+      <label for="color">  Favorite color:</label>
+      <input id="color" type="color" name="color"  />      <br />
+
+      <label for="country">  Which country:</label>
+      <select>
+        <option id="country" value="Vietnam"> Vietnam</option>
+        <option id="country" value="USA">USA</option>
+        <option id="country" value="China">China</option>
+        <option id="country" value="Thai Land">Thai Land</option>
+        <option id="country" value="India">India</option>
+      </select>
+    </fieldset>
+    <fieldset>
+      <legend>
+        Your Indicator
+      </legend>
+      <label for="height"> Height:</label>
+      <span id="short">Short</span> <input id="height" type="range" name="height" min="0" max="100" /> <span id = "tall">Tall</span><br/>
+      <label for="salary">Salary:</label>
+      <span id="poor">Poor</span>   <input id="salary" type="range" name="salary" min="0" max="100" /> <span id = "rich">Rich</span><br/>
+    </fieldset>
+    <fieldset>
+      <legend>
+        Your Contact Information
+      </legend>
+      <label for="email">Email:</label>
+      <input id="email" type="email" name="email" required  /> <br />
+      <label for="mobile">Mobile:</label>
+      <input id="mobile" type="tel" name="mobie"   /> <br />
+      <label for="address">Address:</label>
+      <textarea id="address" rows="2" cols="18"> </textarea> <br />
+      <label class="autow" for="method">Method to contact you:</label>
+      <input id="method" type="checkbox" name="Email"  /> Email
+      <input id="method" type="checkbox" name="Whatsapp"  /> Whatsapp
+      <input id="method" type="checkbox" name="In-app-chat"  /> In-app-chat
+    </fieldset>
+    <input type="submit" value="Submit!">
+  </form>
+  <script src="https://www.cse.ust.hk/~rossiter/dating_web_site.js"></script>
+</body>
+</html>
+
+
